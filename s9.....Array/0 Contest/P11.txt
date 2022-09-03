@@ -1,0 +1,33 @@
+//            Bismillahhir Rahnanir Rahim
+// H:
+
+#include<stdio.h>
+#define Size 2000019
+int main()
+{
+    int n, arr[Size];
+    scanf("%d", &n);
+    
+    int not_zero, zero, okay= 0;
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d", &arr[i]);
+        if(arr[i]==0)
+            zero= i;
+        else
+            not_zero= i;
+    }
+    
+    if(not_zero<zero)
+        okay= not_zero+1;
+    else
+        okay= zero+1;
+        
+    printf("%d\n", okay);
+    return 0;
+
+}
+
+
+//             Author: Sorowar Mahabub,
+//            studies B.Sc in CSE, IIUC

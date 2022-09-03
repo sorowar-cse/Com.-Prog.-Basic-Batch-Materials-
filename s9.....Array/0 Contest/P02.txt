@@ -1,0 +1,30 @@
+//            Bismillahhir Rahnanir Rahim
+// C:
+
+#include<stdio.h>
+int main( )
+{
+    int t, n, num[505];
+    scanf("%d", &t);
+    while(t--)
+    {
+        scanf("%d", &n);
+        for(int i= 0 ; i< n ; i++)
+            scanf("%d",&num[i]);
+
+        int evn= 0, odd= 0;
+        for(int i= 0 ; i<n; i++)
+        {
+            if( i%2 == 0 && num[i]%2 != 0)
+                evn++ ;
+            else if( i%2 != 0 && num[i]%2 == 0)
+                odd++ ;
+        }
+        if(evn == odd)
+            printf("%d\n", ((evn+odd)/2));
+        else
+            printf("-1\n");
+    }
+}
+//             Author: Sorowar Mahabub,
+//            studies B.Sc in CSE, IIUC

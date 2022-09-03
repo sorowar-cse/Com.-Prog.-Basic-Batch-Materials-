@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+int main()
+{
+    int N, max=0, i, sum=0, sum1=0, count= 0;
+    scanf("%d",&N);
+    int L[N];
+
+    for(i=0; i<N; i++)
+        scanf("%d",&L[i]);
+
+    for(i=0; i<N; i++)
+        if(L[i] > 0 && L[i]%6 == 0)
+        {
+            count++;
+            sum +=L[i];
+        }
+
+    printf("%d %d\n", count, sum);
+
+}
+
+// Author: Sorowar Mahabub
