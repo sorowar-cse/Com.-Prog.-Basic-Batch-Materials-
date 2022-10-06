@@ -2,7 +2,7 @@
 
 int main()
 {
-    int size, Sum;
+    int size, Sum= 0;
     scanf("%d", &size);
     int Array[size], i;
 

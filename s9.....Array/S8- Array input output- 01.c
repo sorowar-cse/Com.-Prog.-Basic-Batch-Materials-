@@ -3,12 +3,12 @@
 int main()
 {
     int Array[]= {0, 1, 7, 8, 0}, i, a;
-
+/*
     //input in array using for loop
     for(int i=0; i<=5; i++)
     {
        scanf("%d", &Array[i]);
-    }
+    }*/
     //scanf("%d", &a);
 
     // show array elements using for loop
