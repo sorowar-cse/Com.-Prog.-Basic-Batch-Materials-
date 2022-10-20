@@ -2,8 +2,9 @@
 int main()
 {
     char s[1000], t[10032];
-    //scanf("%s", s);
-    scanf("%[^\n]", &s);
+   //scanf("%s", s);
+    //scanf("%[^\n]", &s);
+    gets(s);
 
 
 
